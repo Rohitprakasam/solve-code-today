@@ -38,7 +38,7 @@ const CountdownTimer = () => {
           {value.toString().padStart(2, "0")}
         </span>
       </div>
-      <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+      <span className="text-sm font-bold text-foreground uppercase tracking-wider">
         {label}
       </span>
     </div>
