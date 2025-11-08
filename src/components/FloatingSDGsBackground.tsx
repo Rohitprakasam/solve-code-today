@@ -28,27 +28,29 @@ interface FloatingIcon {
   size: number;
   duration: number;
   delay: number;
+  animationType: 'bounce-around' | 'bounce-diagonal';
 }
 
 const FloatingSDGsBackground = () => {
   const [floatingIcons, setFloatingIcons] = useState<FloatingIcon[]>([]);
 
   useEffect(() => {
-    // Generate random positions for SDG icons
+    // Generate random positions for SDG icons with bouncing animations
     const icons: FloatingIcon[] = sdgUrls.map((url, index) => ({
       id: index,
       url,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: 60 + Math.random() * 40, // 60-100px
-      duration: 15 + Math.random() * 10, // 15-25s
+      x: Math.random() * 90,
+      y: Math.random() * 90,
+      size: 40 + Math.random() * 30, // 40-70px (smaller size)
+      duration: 12 + Math.random() * 8, // 12-20s
       delay: Math.random() * 5, // 0-5s delay
+      animationType: index % 2 === 0 ? 'bounce-around' : 'bounce-diagonal',
     }));
     setFloatingIcons(icons);
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-10">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-15">
       {floatingIcons.map((icon) => (
         <div
           key={icon.id}
@@ -58,14 +60,14 @@ const FloatingSDGsBackground = () => {
             top: `${icon.y}%`,
             width: `${icon.size}px`,
             height: `${icon.size}px`,
-            animation: `float ${icon.duration}s ease-in-out infinite`,
+            animation: `${icon.animationType} ${icon.duration}s ease-in-out infinite`,
             animationDelay: `${icon.delay}s`,
           }}
         >
           <img
             src={icon.url}
             alt={`SDG ${icon.id + 1}`}
-            className="w-full h-full object-contain opacity-60 blur-[1px]"
+            className="w-full h-full object-contain rounded-lg shadow-lg"
             loading="lazy"
           />
         </div>

@@ -177,8 +177,31 @@ All colors MUST be HSL.
     }
   }
   
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
+  @keyframes bounce-around {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(100px, -100px) rotate(90deg);
+    }
+    50% {
+      transform: translate(200px, 50px) rotate(180deg);
+    }
+    75% {
+      transform: translate(50px, 100px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+  
+  @keyframes bounce-diagonal {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-80px, -80px) scale(1.2);
+    }
   }
   
   @keyframes glow-pulse {
@@ -188,6 +211,10 @@ All colors MUST be HSL.
     50% {
       opacity: 0.5;
     }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
   }
   
   .animate-glow-pulse {
