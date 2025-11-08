@@ -8,86 +8,92 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 210 20% 15%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Red theme primary color */
-    --primary: 0 85% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 0 90% 60%;
+    /* Neon cyan primary color */
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 180 100% 60%;
     
-    --secondary: 0 40% 96%;
-    --secondary-foreground: 0 20% 15%;
+    --secondary: 280 100% 60%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 10% 95%;
-    --muted-foreground: 0 10% 35%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 10 90% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 320 100% 60%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 20% 88%;
-    --input: 0 15% 91%;
-    --ring: 0 85% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 12%;
+    --ring: 180 100% 50%;
 
     --radius: 0.75rem;
     
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 85% 50%) 0%, hsl(0 90% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 85% 45%) 0%, hsl(5 90% 55%) 50%, hsl(10 90% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 10% 98%) 100%);
+    /* Neon gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%) 0%, hsl(280 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 40%) 0%, hsl(240 100% 50%) 50%, hsl(280 100% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%) 0%, hsl(0 0% 12%) 100%);
     
-    /* Custom shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(0 85% 50% / 0.2);
-    --shadow-glow: 0 0 40px hsl(0 90% 60% / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(0 20% 15% / 0.08);
+    /* Neon shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(180 100% 50% / 0.5);
+    --shadow-glow: 0 0 60px hsl(180 100% 50% / 0.6);
+    --shadow-card: 0 4px 30px -4px hsl(180 100% 50% / 0.3);
+    --shadow-neon-cyan: 0 0 20px hsl(180 100% 50% / 0.8);
+    --shadow-neon-purple: 0 0 20px hsl(280 100% 60% / 0.8);
+    --shadow-neon-pink: 0 0 20px hsl(320 100% 60% / 0.8);
   }
 
   .dark {
-    --background: 210 30% 8%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 210 25% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 210 25% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 90% 55%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 0 95% 65%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 180 100% 60%;
 
-    --secondary: 210 25% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 280 100% 60%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 25% 15%;
-    --muted-foreground: 0 5% 75%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 10 90% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 320 100% 60%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 210 25% 20%;
-    --input: 210 25% 18%;
-    --ring: 0 90% 55%;
+    --border: 0 0% 20%;
+    --input: 0 0% 12%;
+    --ring: 180 100% 50%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(0 85% 45%) 0%, hsl(0 90% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 85% 40%) 0%, hsl(5 90% 55%) 50%, hsl(10 90% 65%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(210 25% 12%) 0%, hsl(0 15% 15%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%) 0%, hsl(280 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 40%) 0%, hsl(240 100% 50%) 50%, hsl(280 100% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%) 0%, hsl(0 0% 12%) 100%);
     
-    --shadow-elegant: 0 10px 30px -10px hsl(0 90% 55% / 0.3);
-    --shadow-glow: 0 0 40px hsl(0 95% 65% / 0.25);
-    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-elegant: 0 10px 40px -10px hsl(180 100% 50% / 0.5);
+    --shadow-glow: 0 0 60px hsl(180 100% 50% / 0.6);
+    --shadow-card: 0 4px 30px -4px hsl(180 100% 50% / 0.3);
+    --shadow-neon-cyan: 0 0 20px hsl(180 100% 50% / 0.8);
+    --shadow-neon-purple: 0 0 20px hsl(280 100% 60% / 0.8);
+    --shadow-neon-pink: 0 0 20px hsl(320 100% 60% / 0.8);
   }
 }
 
@@ -131,7 +137,60 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-card);
   }
   
+  .shadow-neon-cyan {
+    box-shadow: var(--shadow-neon-cyan);
+  }
+  
+  .shadow-neon-purple {
+    box-shadow: var(--shadow-neon-purple);
+  }
+  
+  .shadow-neon-pink {
+    box-shadow: var(--shadow-neon-pink);
+  }
+  
   .transition-smooth {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .neon-text-cyan {
+    color: hsl(180 100% 50%);
+    text-shadow: 0 0 10px hsl(180 100% 50% / 0.8), 0 0 20px hsl(180 100% 50% / 0.6);
+  }
+  
+  .neon-text-purple {
+    color: hsl(280 100% 60%);
+    text-shadow: 0 0 10px hsl(280 100% 60% / 0.8), 0 0 20px hsl(280 100% 60% / 0.6);
+  }
+  
+  .neon-text-pink {
+    color: hsl(320 100% 60%);
+    text-shadow: 0 0 10px hsl(320 100% 60% / 0.8), 0 0 20px hsl(320 100% 60% / 0.6);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes glow-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
   }
 }
