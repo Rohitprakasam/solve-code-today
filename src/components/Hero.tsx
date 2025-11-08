@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Logo placeholder */}
           <div className="flex justify-center mb-6 animate-fade-in">
-            <div className="w-24 h-24 rounded-2xl bg-white/10 backdrop-blur-sm border-2 border-white/20 flex items-center justify-center shadow-glow">
+            <div className="w-24 h-24 rounded-2xl bg-destructive backdrop-blur-sm border-2 border-destructive/50 flex items-center justify-center shadow-neon-pink">
               <span className="text-white font-bold text-3xl">IEEE</span>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="hidden sm:block w-1 h-1 rounded-full bg-white/50" />
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />
-              <span className="font-medium">Bharati Vidyapeeth College</span>
+              <span className="font-medium">Sairam Engineering College</span>
             </div>
           </div>
 

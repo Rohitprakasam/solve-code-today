@@ -12,8 +12,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-neon-cyan">
-                <span className="text-primary-foreground font-bold text-lg">IEEE</span>
+              <div className="w-10 h-10 bg-destructive rounded-lg flex items-center justify-center shadow-neon-pink">
+                <span className="text-white font-bold text-lg">IEEE</span>
               </div>
               <span className="text-xl font-bold neon-text-cyan">BTS Society</span>
             </div>

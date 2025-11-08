@@ -33,12 +33,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">IEEE</span>
+            <div className="w-10 h-10 rounded-lg bg-destructive flex items-center justify-center shadow-neon-pink">
+              <span className="text-white font-bold text-lg">IEEE</span>
             </div>
             <div className="hidden md:block">
-              <h2 className="font-bold text-lg">IEEE BTS Society</h2>
-              <p className="text-xs text-muted-foreground">Bharati Vidyapeeth</p>
+              <h2 className="font-bold text-lg neon-text-cyan">IEEE BTS Society</h2>
+              <p className="text-xs text-muted-foreground">Sairam Engineering College & Sairam Institute of Technology</p>
             </div>
           </div>
 
